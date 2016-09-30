@@ -13,9 +13,10 @@ alias g="git"
 alias db1a.sg="psql -U trinitysys -h10.2.2.1 capture_user_sg_1"
 alias db2a.sg="psql -U trinitysys -h10.2.2.2 capture_user_sg_2"
 alias db3a.sg="psql -U trinitysys -h10.2.2.3 capture_user_sg_3"
-alias db1a.no="psql -U trinitysys comoyo_trinity_0 -H 10.2.2.1"
-alias db2a.no="psql -U trinitysys comoyo_trinity_1 -H 10.2.2.2"
-alias db3a.no="psql -U trinitysys comoyo_trinity_2 -H 10.2.2.3"
+
+alias db1a.no="psql -U trinitysys comoyo_trinity_0 -h 10.2.2.1"
+alias db2a.no="psql -U trinitysys comoyo_trinity_1 -h 10.2.2.2"
+alias db3a.no="psql -U trinitysys comoyo_trinity_2 -h 10.2.2.3"
 
 alias ssh="ssh -F ~/Capture/.osx/ssh_config"
 
