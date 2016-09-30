@@ -10,6 +10,9 @@ alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
 alias p="python"
 alias g="git"
+alias db1a.sg="psql -U trinitysys comoyo_trinity_0 -H 10.2.2.1"
+alias db2a.sg="psql -U trinitysys comoyo_trinity_1 -H 10.2.2.2"
+alias db3a.sg="psql -U trinitysys comoyo_trinity_2 -H 10.2.2.3"
 
 alias ssh="ssh -F ~/Capture/.osx/ssh_config"
 
