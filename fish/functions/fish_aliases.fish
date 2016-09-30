@@ -17,7 +17,7 @@ alias db1a.no="psql -U trinitysys comoyo_trinity_0 -H 10.2.2.1"
 alias db2a.no="psql -U trinitysys comoyo_trinity_1 -H 10.2.2.2"
 alias db3a.no="psql -U trinitysys comoyo_trinity_2 -H 10.2.2.3"
 
-alias ssh="ssh -F ~/Capture/.osx/ssh_config"
+#alias ssh="ssh -F ~//.osx/ssh_config"
 
 # Always use color output for `ls`
 alias ls="command ls $colorflag -hF"
