@@ -8,6 +8,5 @@ function db_no
 
     menu $items
 
-    echo $menu_selected_index
-    eval $items[3]
+    eval $items[$menu_selected_index]
 end
