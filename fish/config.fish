@@ -12,5 +12,5 @@ source $HOME/.config/fish/functions/fish_aliases.fish
 #[ -f /usr/local/share/autojump/autojump.fish ]; and source /usr/local/share/autojump/autojump.fish
 test -e {$HOME}/.iterm2_shell_integration.fish ; and source {$HOME}/.iterm2_shell_integration.fish
 
-eval (thefuck --alias | tr '\n' ';')
+#eval (thefuck --alias | tr '\n' ';')
 
