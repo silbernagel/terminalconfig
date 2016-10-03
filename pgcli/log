@@ -1,0 +1,17 @@
+2016-10-02 11:25:42,865 (27067/MainThread) pgcli.main INFO - No default pager found in environment. Using os default pager
+2016-10-02 11:25:42,867 (27067/MainThread) pgcli.main ERROR - traceback: 'Traceback (most recent call last):\n  File "/usr/local/lib/python2.7/dist-packages/pgcli/main.py", line 316, in connect\n    raise e\nOperationalError: could not connect to server: No such file or directory\n\tIs the server running locally and accepting\n\tconnections on Unix domain socket "/var/run/postgresql/.s.PGSQL.5432"?\n\n'
+2016-10-02 11:26:14,992 (27163/MainThread) pgcli.main INFO - No default pager found in environment. Using os default pager
+2016-10-02 13:07:59,512 (25177/MainThread) pgcli.main INFO - No default pager found in environment. Using os default pager
+2016-10-02 13:08:05,438 (25177/MainThread) pgcli.pgexecute ERROR - sql: u'sele', error: ProgrammingError('syntax error at or near "sele"\nLINE 1: sele\n        ^\n',)
+2016-10-02 13:08:05,440 (25177/MainThread) pgcli.pgexecute ERROR - traceback: 'Traceback (most recent call last):\n  File "/usr/local/lib/python2.7/dist-packages/pgcli/pgexecute.py", line 277, in run\n    yield self.execute_normal_sql(sql) + (sql, True)\n  File "/usr/local/lib/python2.7/dist-packages/pgcli/pgexecute.py", line 297, in execute_normal_sql\n    cur.execute(split_sql)\nProgrammingError: syntax error at or near "sele"\nLINE 1: sele\n        ^\n\n'
+2016-10-02 13:12:29,730 (848/MainThread) pgcli.main INFO - No default pager found in environment. Using os default pager
+2016-10-02 13:12:32,080 (848/MainThread) pgcli.pgexecute ERROR - sql: u'sele', error: ProgrammingError('syntax error at or near "sele"\nLINE 1: sele\n        ^\n',)
+2016-10-02 13:12:32,081 (848/MainThread) pgcli.pgexecute ERROR - traceback: 'Traceback (most recent call last):\n  File "/usr/local/lib/python2.7/dist-packages/pgcli/pgexecute.py", line 277, in run\n    yield self.execute_normal_sql(sql) + (sql, True)\n  File "/usr/local/lib/python2.7/dist-packages/pgcli/pgexecute.py", line 297, in execute_normal_sql\n    cur.execute(split_sql)\nProgrammingError: syntax error at or near "sele"\nLINE 1: sele\n        ^\n\n'
+2016-10-02 13:20:15,375 (17484/MainThread) pgcli.main INFO - No default pager found in environment. Using os default pager
+2016-10-02 13:20:48,522 (18119/MainThread) pgcli.main INFO - No default pager found in environment. Using os default pager
+2016-10-02 13:22:38,548 (19569/MainThread) pgcli.main INFO - No default pager found in environment. Using os default pager
+2016-10-02 13:25:02,344 (26120/MainThread) pgcli.main INFO - No default pager found in environment. Using os default pager
+2016-10-02 13:26:16,763 (27254/MainThread) pgcli.main INFO - No default pager found in environment. Using os default pager
+2016-10-02 13:26:20,515 (27254/MainThread) pgcli.pgexecute ERROR - sql: u'selec', error: ProgrammingError('syntax error at or near "selec"\nLINE 1: selec\n        ^\n',)
+2016-10-02 13:26:20,516 (27254/MainThread) pgcli.pgexecute ERROR - traceback: 'Traceback (most recent call last):\n  File "/usr/local/lib/python2.7/dist-packages/pgcli/pgexecute.py", line 277, in run\n    yield self.execute_normal_sql(sql) + (sql, True)\n  File "/usr/local/lib/python2.7/dist-packages/pgcli/pgexecute.py", line 297, in execute_normal_sql\n    cur.execute(split_sql)\nProgrammingError: syntax error at or near "selec"\nLINE 1: selec\n        ^\n\n'
+2016-10-02 22:10:44,941 (14243/MainThread) pgcli.main INFO - No default pager found in environment. Using os default pager

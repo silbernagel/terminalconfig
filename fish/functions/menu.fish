@@ -1,0 +1,1 @@
+/home/jorg/.config/fisherman/menu/menu.fish
