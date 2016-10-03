@@ -1,59 +1,51 @@
-
 ForwardAgent yes
-
-IdentityFile ~/.ssh/id_rsa_capture_cluster
-
-#Host *
-#  ControlMaster auto
-#  ControlPath /tmp/ssh_mux_%h_%p_%r
-
 ControlPersist 1h
+ServerAliveInterval 60
 
-Host localhost
-     ForwardAgent yes
+Host *
+  PasswordAuthentication no
+  ChallengeResponseAuthentication no
+  PubkeyAuthentication yes
+  ForwardAgent yes
 
 #Compression yes
-#CompressionLevel 9
 
 Host neoplex.org
     HostName neoplex.org
 
-ServerAliveInterval 60
-
 Host brygge
+  IdentityFile ~/.ssh/id_rsa_capture_cluster
   HostName bk.cptr.no
 
 Host bast1.no
   ProxyCommand ssh brygge nc -N 62.92.26.132 2233
 
 Host app*
-  ForwardAgent yes
   ProxyCommand ssh bast1.no nc %h 22
 
 Host util1
-  ForwardAgent yes
   ProxyCommand ssh bast1.no nc %h 22
 
 Host bast1.sg
-  ForwardAgent yes
+  IdentityFile ~/.ssh/id_rsa_capture_cluster
   HostName b1.sg.tef.re
+  Compression no
+  #CompressionLevel 9  
   #ProxyCommand ssh brygge nc -N b1.sg.tef.re 22
   #ProxyCommand ssh b1.sg.tef.re nc -N %h 22
 
-Host b1.sg.tef.re
-  ForwardAgent yes
-  HostName b1.sg.tef.re
+#Host b1.sg.tef.re
+#  Compression no
+#  #CompressionLevel 9
+#  HostName b1.sg.tef.re
 
 Host sapp*
-  ForwardAgent yes
   ProxyCommand ssh bast1.sg nc %h 22
 
 Host sutil1
-  ForwardAgent yes
   ProxyCommand ssh bast1.sg nc %h 22
   ProxyCommand mosh -- hop  -W bast1.sg:22
   
 Host sutil2
-  ForwardAgent yes
   ProxyCommand ssh bast1.sg nc %h 22
-  ProxyCommand mosh -- hop  -W bast1.sg:22
+  #ProxyCommand mosh -- hop  -W bast1.sg:22

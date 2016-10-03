@@ -4,10 +4,6 @@ alias ....="cd ../../.."
 alias .....="cd ../../../.."
 
 # Shortcuts
-alias d="cd ~/Dropbox"
-alias ca="cd ~/Capture"
-alias dl="cd ~/Downloads"
-alias dt="cd ~/Desktop"
 alias p="python"
 alias g="git"
 alias db1a.sg="psql -U trinitysys -h10.2.2.1 capture_user_sg_1"
