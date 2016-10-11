@@ -1,24 +1,22 @@
-ForwardAgent yes
-ControlPersist 1h
-ServerAliveInterval 60
-
 Host *
-  PasswordAuthentication no
-  ChallengeResponseAuthentication no
+  ControlPersist 1h
+  ServerAliveInterval 60
+  # PasswordAuthentication no
+  # ChallengeResponseAuthentication no
   PubkeyAuthentication yes
   ForwardAgent yes
-
-#Compression yes
+  IdentityFile ~/.ssh/id_rsa_capture_cluster
 
 Host neoplex.org
+    PubkeyAcceptedKeyTypes +ssh-dss
     HostName neoplex.org
+    IdentityFile ~/.ssh/id_dsa
 
-Host brygge
-  IdentityFile ~/.ssh/id_rsa_capture_cluster
+Host bk.cptr.no
   HostName bk.cptr.no
 
 Host bast1.no
-  ProxyCommand ssh brygge nc -N 62.92.26.132 2233
+  ProxyCommand ssh bk.cptr.no nc -N 62.92.26.132 2233
 
 Host app*
   ProxyCommand ssh bast1.no nc %h 22
@@ -26,8 +24,8 @@ Host app*
 Host util1
   ProxyCommand ssh bast1.no nc %h 22
 
+
 Host bast1.sg
-  IdentityFile ~/.ssh/id_rsa_capture_cluster
   HostName b1.sg.tef.re
   Compression no
   #CompressionLevel 9  

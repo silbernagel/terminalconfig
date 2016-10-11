@@ -1,1 +1,0 @@
-/Users/jorg/.config/fisherman/fasd/functions/a.fish
