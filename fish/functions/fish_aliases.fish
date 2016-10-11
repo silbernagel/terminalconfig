@@ -19,7 +19,6 @@ alias db3a.no="pgcli -U trinitysys comoyo_trinity_2 -h 10.2.2.3"
 alias f="ag -g"
 alias r=ag
 
-
 #alias ssh="ssh -F ~//.osx/ssh_config"
 
 # Always use color output for `ls`
