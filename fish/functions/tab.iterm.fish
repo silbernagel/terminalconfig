@@ -1,1 +1,0 @@
-/Users/jorg/.config/fisherman/tab/functions/tab.iterm.fish

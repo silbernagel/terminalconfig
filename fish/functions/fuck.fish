@@ -1,1 +1,0 @@
-/Users/jorg/.config/fisherman/thefuck/functions/fuck.fish
