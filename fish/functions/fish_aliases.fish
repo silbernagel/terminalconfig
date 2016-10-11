@@ -12,7 +12,7 @@ alias db3a.sg="pgcli -U trinitysys -h10.2.2.3 capture_user_sg_3"
 
 alias db1a.no="pgcli -U trinitysys comoyo_trinity_0 -h 10.2.2.1"
 alias db2a.no="pgcli -U trinitysys comoyo_trinity_1 -h 10.2.2.2"
-alias db3a.no="pgcli -U trinitysys comoyo_trinity_2 -h 10.2.2.3"
+alias db3a.no="pgcli -U trinitysys capture_user_no_3 -h 10.2.2.3"
 
 #alias ssh="ssh -F ~//.osx/ssh_config"
 
