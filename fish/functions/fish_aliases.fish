@@ -6,6 +6,11 @@ alias .....="cd ../../../.."
 # Shortcuts
 alias p="python"
 alias g="git"
+alias n="nano"
+alias e="emacs"
+alias sudo="sudo -p '[sudo] %h:%u'"
+
+# DB-connections
 alias db1a.sg="pgcli -U trinitysys -h10.2.2.1 capture_user_sg_1"
 alias db2a.sg="pgcli -U trinitysys -h10.2.2.2 capture_user_sg_2"
 alias db3a.sg="pgcli -U trinitysys -h10.2.2.3 capture_user_sg_3"
@@ -30,7 +35,7 @@ alias lock="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resourc
 
 #export HISTCONTROL=ignoredups
 # Make some commands not show up in history
-#export HISTIGNORE="ls:cd:cd -:pwd:exit:date:* --help"
+export HISTIGNORE="ls:cd:cd -:pwd:exit:date:* --help"
 
 
 #[ -e "$HOME/Capture/.osx/ssh_config" ] && complete -o "default" -o "nospace" -W "$(grep "^Host" ~/Capture/.osx/ssh_config | grep -v "[?*]" | cut -d " " -f2 | tr ' ' '\n')" scp sftp ssh
