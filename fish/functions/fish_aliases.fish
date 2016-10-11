@@ -6,6 +6,7 @@ alias .....="cd ../../../.."
 # Shortcuts
 alias p="python"
 alias g="git"
+alias gs="git status"
 alias n="nano"
 alias e="emacs"
 alias sudo="sudo -p '[sudo] %h:%u'"
@@ -20,14 +21,13 @@ alias db2a.no="pgcli -U trinitysys comoyo_trinity_1 -h 10.2.2.2"
 alias db3a.no="pgcli -U trinitysys comoyo_trinity_2 -h 10.2.2.3"
 
 #ag_aliases
-
 alias f="ag -g"
 alias r=ag
 
-#alias ssh="ssh -F ~//.osx/ssh_config"
-
 # Always use color output for `ls`
-alias ls="command ls $colorflag -hF"
+#alias ls="command ls $colorflag -hF"
+set -xU LS_COLORS 
+
 
 alias week='date +%V'
 
@@ -43,5 +43,5 @@ alias lock="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resourc
 export HISTIGNORE="ls:cd:cd -:pwd:exit:date:* --help"
 
 
-#[ -e "$HOME/Capture/.osx/ssh_config" ] && complete -o "default" -o "nospace" -W "$(grep "^Host" ~/Capture/.osx/ssh_config | grep -v "[?*]" | cut -d " " -f2 | tr ' ' '\n')" scp sftp ssh
+#[ -e "$HOME/.config/ssh_config" ] && complete -o "default" -o "nospace" -W "$(grep "^Host" ~/.config/ssh_config | grep -v "[?*]" | cut -d " " -f2 | tr ' ' '\n')" scp sftp ssh
 

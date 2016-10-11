@@ -1,0 +1,49 @@
+Host *
+  ControlPersist 1h
+  ServerAliveInterval 60
+  # PasswordAuthentication no
+  # ChallengeResponseAuthentication no
+  PubkeyAuthentication yes
+  ForwardAgent yes
+  IdentityFile ~/.ssh/id_rsa_capture_cluster
+
+Host neoplex.org
+    PubkeyAcceptedKeyTypes +ssh-dss
+    HostName neoplex.org
+    IdentityFile ~/.ssh/id_dsa
+
+Host bk.cptr.no
+  HostName bk.cptr.no
+
+Host bast1.no
+  ProxyCommand ssh bk.cptr.no nc -N 62.92.26.132 2233
+
+Host app*
+  ProxyCommand ssh bast1.no nc %h 22
+
+Host util1
+  ProxyCommand ssh bast1.no nc %h 22
+
+
+Host bast1.sg
+  HostName b1.sg.tef.re
+  Compression no
+  #CompressionLevel 9  
+  #ProxyCommand ssh brygge nc -N b1.sg.tef.re 22
+  #ProxyCommand ssh b1.sg.tef.re nc -N %h 22
+
+#Host b1.sg.tef.re
+#  Compression no
+#  #CompressionLevel 9
+#  HostName b1.sg.tef.re
+
+Host sapp*
+  ProxyCommand ssh bast1.sg nc %h 22
+
+Host sutil1
+  ProxyCommand ssh bast1.sg nc %h 22
+  ProxyCommand mosh -- hop  -W bast1.sg:22
+  
+Host sutil2
+  ProxyCommand ssh bast1.sg nc %h 22
+  #ProxyCommand mosh -- hop  -W bast1.sg:22
