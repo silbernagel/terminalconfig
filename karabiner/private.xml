@@ -1,0 +1,82 @@
+<?xml version="1.0"?>
+<root>
+
+  <item>
+    <name>Chrome shortcuts</name>
+    <only>GOOGLE_CHROME</only>
+    <appendix>Change Command+Shift+Equal to Ctrl+-</appendix>
+    <identifier>private.switchChromeProfile</identifier>
+    <autogen>__KeyToKey__ KeyCode::P, VK_CONTROL, KeyCode::EQUAL, ModifierFlag::COMMAND_L, VK_SHIFT </autogen>
+  </item>
+
+   <modifierdef>LEFT_PAREN</modifierdef>
+
+  <item>
+    <name>Shift to Paren</name>
+    <appendix>Tap Left Shift: Left bracket. 2xTap Left Shit: Curly bracket</appendix>
+    <appendix>Tap Right Shift: Right bracket. 2xTap Roght Shit: Curly bracket</appendix>
+
+    <identifier>private.shift2paren</identifier>
+
+    <autogen>
+      __KeyOverlaidModifier__
+      KeyCode::SHIFT_L, ModifierFlag::LEFT_PAREN,
+
+      @begin
+      KeyCode::SHIFT_L,
+      @end
+
+      @begin
+      KeyCode::DELETE,
+      KeyCode::KEY_8, ModifierFlag::SHIFT_L |ModifierFlag::OPTION_L,
+      @end
+    </autogen>
+
+    <autogen>
+      __KeyOverlaidModifier__
+      KeyCode::SHIFT_L,
+
+      @begin
+      KeyCode::SHIFT_L,
+      @end
+
+      @begin
+      KeyCode::KEY_8, ModifierFlag::OPTION_L,
+      KeyCode::VK_STICKY_LEFT_PAREN_FORCE_ON,
+      @end
+    </autogen>
+
+        <autogen>
+      __KeyOverlaidModifier__
+      KeyCode::SHIFT_R, ModifierFlag::LEFT_PAREN,
+
+      @begin
+      KeyCode::SHIFT_R,
+      @end
+
+      @begin
+      KeyCode::DELETE,
+      KeyCode::KEY_9, ModifierFlag::SHIFT_R |ModifierFlag::OPTION_R,
+      @end
+    </autogen>
+    
+
+    
+    <autogen>
+      __KeyOverlaidModifier__
+      KeyCode::SHIFT_R,
+
+      @begin
+      KeyCode::SHIFT_R,
+      @end
+
+      @begin
+      KeyCode::KEY_9, ModifierFlag::OPTION_L,
+      KeyCode::VK_STICKY_LEFT_PAREN_FORCE_ON,
+      @end
+    </autogen>
+  </item>  
+
+</root>
+
+
