@@ -6,6 +6,8 @@ Host *
   PubkeyAuthentication yes
   ForwardAgent yes
   IdentityFile ~/.ssh/id_rsa_capture_cluster
+  UseKeychain yes
+  AddKeysToAgent yes
 
 Host neoplex.org
     PubkeyAcceptedKeyTypes +ssh-dss
@@ -14,6 +16,9 @@ Host neoplex.org
 
 Host bk.cptr.no
   HostName bk.cptr.no
+
+Host reporting.cptr.no
+  HostName reporting.cptr.no
 
 Host bast1.no
   ProxyCommand ssh bk.cptr.no nc -N 62.92.26.132 2233
@@ -24,6 +29,8 @@ Host app*
 Host util1
   ProxyCommand ssh bast1.no nc %h 22
 
+Host capture-app.com
+  ProxyCommand ssh bk.cptr.no nc -N ie.webserver.capture-app.com 22
 
 Host bast1.sg
   HostName b1.sg.tef.re
