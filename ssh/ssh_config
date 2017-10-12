@@ -32,6 +32,9 @@ Host util1
 Host capture-app.com
   ProxyCommand ssh bk.cptr.no nc -N ie.webserver.capture-app.com 22
 
+Host sg.capture-app.com
+  ProxyCommand ssh bk.cptr.no nc -N sg.webserver.capture-app.com 22
+
 Host bast1.sg
   HostName b1.sg.tef.re
   Compression no
@@ -54,3 +57,4 @@ Host sutil1
 Host sutil2
   ProxyCommand ssh bast1.sg nc %h 22
   #ProxyCommand mosh -- hop  -W bast1.sg:22
+
