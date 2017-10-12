@@ -763,6 +763,10 @@ defaults write org.m0k.transmission BlocklistAutoUpdate -bool true
 # Randomize po on launch
 defaults write org.m0k.transmission RandomPort -bool true
 
+###############################################################################
+# Add nano themes                                                             #
+###############################################################################
+git clone git@github.com:scopatz/nanorc.git ~/config/.nano
 
 ###############################################################################
 # Kill affected applications                                                  #

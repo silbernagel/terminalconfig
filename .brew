@@ -1,5 +1,6 @@
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 brew install cask
+brew install nano
 brew install git
 brew install wget
 brew install emacs
