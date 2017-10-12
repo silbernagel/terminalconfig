@@ -768,6 +768,14 @@ defaults write org.m0k.transmission RandomPort -bool true
 ###############################################################################
 git clone git@github.com:scopatz/nanorc.git ~/config/.nano
 
+
+###############################################################################
+# Set local config files to point right                                       #
+###############################################################################
+ln -s ~/.config/ssh/ssh_config ~/.ssh/config
+ln -s ~/.config/.nanorc ~/.nanorc
+ln -s ~/.config/.emacs ~/.emacs
+
 ###############################################################################
 # Kill affected applications                                                  #
 ###############################################################################
