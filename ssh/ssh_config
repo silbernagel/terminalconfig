@@ -8,8 +8,10 @@ Host *
   IdentityFile ~/.ssh/id_rsa_capture_cluster
   UseKeychain yes
   AddKeysToAgent yes
+  RemoteForward 52698 localhost:52698
 
 Host neoplex.org
+    RemoteForward 52698 127.0.0.1:52698
     PubkeyAcceptedKeyTypes +ssh-dss
     HostName neoplex.org
     IdentityFile ~/.ssh/id_dsa

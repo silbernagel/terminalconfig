@@ -20,4 +20,10 @@ brew cask install font-meslo-for-powerline
 brew cask install transmission
 brew cask install appcleaner
 brew install fish
+echo "/usr/local/bin/fish" | sudo tee -a /etc/shells
+chsh -s /usr/local/bin/fish
+ssh-add -K ~/.ssh/id_rsa_capture_cluster
 brew cask install google-drive-file-stream
+brew install rg
+brew tap caskroom/versions
+brew cask install sublime-text
