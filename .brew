@@ -27,3 +27,4 @@ brew cask install google-drive-file-stream
 brew install rg
 brew tap caskroom/versions
 brew cask install sublime-text
+brew cask install karabiner-elements

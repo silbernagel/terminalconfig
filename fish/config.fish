@@ -1,4 +1,4 @@
-setenv EDITOR "nano"
+setenv EDITOR "s"
 export GREP_OPTIONS="--color=auto"
 
 if test -d "/usr/local/opt/coreutils/libexec/gnubin"
