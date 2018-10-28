@@ -1,0 +1,5 @@
+## Python
+include "~/.config/.nano/python.nanorc"
+include "~/.config/.nano/conf.nanorc"
+include "~/.config/.nano/git.nanorc"
+include "~/.config/.nano/json.nanorc"

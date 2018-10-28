@@ -1,7 +1,7 @@
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 brew install cask
+brew install nano
 brew install git
-brew install tig
 brew install wget
 brew install emacs
 brew install coreutils
@@ -9,11 +9,9 @@ brew install speedtest_cli
 brew install htop
 brew install ncdu
 brew install watch
-brew install thefuck
 brew tap caskroom/fonts
 brew cask install evernote
 brew cask install google-chrome
-brew cask install google-drive
 brew cask install iterm2
 brew cask install slack
 brew cask install spotify
@@ -21,5 +19,12 @@ brew cask install puush
 brew cask install font-meslo-for-powerline
 brew cask install transmission
 brew cask install appcleaner
-brew cask install jitouch
 brew install fish
+echo "/usr/local/bin/fish" | sudo tee -a /etc/shells
+chsh -s /usr/local/bin/fish
+ssh-add -K ~/.ssh/id_rsa_capture_cluster
+brew cask install google-drive-file-stream
+brew install rg
+brew tap caskroom/versions
+brew cask install sublime-text
+brew cask install karabiner-elements

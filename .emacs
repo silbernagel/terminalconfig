@@ -64,5 +64,5 @@
 ; when on a tab, make the cursor the tab length
 (setq-default x-stretch-cursor t)
 
-(require 'expand-region)
-(global-set-key (kbd "C-=") 'er/expand-region)
+;(require 'expand-region)
+;(global-set-key (kbd "C-=") 'er/expand-region)

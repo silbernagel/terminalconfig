@@ -1,5 +1,5 @@
 function _dircolors_set_256_color
-    if type -fq dircolors and test -e ~/.dircolors.256
+    if type -fq dircolors and (test -e ~/.dircolors.256)
        eval (dircolors -c ~/.config/dircolors.256 | sed 's/>&\/dev\/null$//')
     end
 end
