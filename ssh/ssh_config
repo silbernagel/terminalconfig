@@ -29,6 +29,22 @@ Host app*
 Host util1
   ProxyCommand ssh bast1.no nc %h 22
 
+Host db1a
+  ProxyCommand ssh bast1.no nc %h 22
+
+Host db2a
+  ProxyCommand ssh bast1.no nc %h 22
+
+Host db3a
+  ProxyCommand ssh bast1.no nc %h 22
+
+Host db4a
+  ProxyCommand ssh bast1.no nc %h 22
+
+
+Host db7a
+  ProxyCommand ssh bast1.no nc %h 22
+
 Host capture-app.com
   ProxyCommand ssh bk.cptr.no nc -N ie.webserver.capture-app.com 22
 
