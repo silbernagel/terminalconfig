@@ -126,6 +126,16 @@
                 "type": "basic"
               },
               {"conditions": [{"name": "launcher_mode","type": "variable_if","value": 1}],
+                "from": {"key_code": "h"},
+                "to": [{"shell_command": "open '/Applications/Hero Lab.app'"}],
+                "type": "basic"
+              },
+              {"conditions": [{"name": "launcher_mode","type": "variable_if","value": 1}],
+                "from": {"key_code": "l"},
+                "to": [{"shell_command": "open '/Applications/Slack.app'"}],
+                "type": "basic"
+              },                            
+              {"conditions": [{"name": "launcher_mode","type": "variable_if","value": 1}],
                 "from": {"key_code": "f"},
                 "to": [{"shell_command": "open '/System/Library/CoreServices/Finder.app'"}],
                 "type": "basic"
@@ -140,7 +150,7 @@
                 "value": 1
               }
             ],
-            "description": "Right shit double click part 1",
+            "description": "Right shift double click part 1",
             "from": {
               "key_code": "right_shift",
               "modifiers": {
