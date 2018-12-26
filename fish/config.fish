@@ -11,6 +11,9 @@ source $HOME/.config/fish/functions/fish_user_key_bindings.fish
 source $HOME/.config/fish/functions/fish_aliases.fish
 source $HOME/.config/fish/functions/dcolors.fish
 
+set -Ux LC_ALL en_GB.UTF-8
+set -Ux LC_CTYPE en_GB.UTF-8
+
 #set -xU SSH_AUTH_SOCK 'gpgconf --list-dirs agent-ssh-socket'
 #export SSH_AUTH_SOCK=gpgconf --list-dirs agent-ssh-socket
 export SSH_AUTH_SOCK=(gpgconf --list-dirs agent-ssh-socket)
