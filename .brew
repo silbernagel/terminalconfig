@@ -19,6 +19,8 @@ brew cask install puush
 brew cask install font-meslo-for-powerline
 brew cask install transmission
 brew cask install appcleaner
+brew cask install dropbox
+brew cask install simplenote
 brew install fish
 echo "/usr/local/bin/fish" | sudo tee -a /etc/shells
 chsh -s /usr/local/bin/fish
@@ -29,3 +31,6 @@ brew tap caskroom/versions
 brew cask install sublime-text
 brew cask install karabiner-elements
 brew cask install 1password-beta
+brew tap domt4/autoupdate
+brew autoupdate --start 43200
+
