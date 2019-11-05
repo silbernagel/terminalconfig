@@ -53,29 +53,10 @@ Host db7a
 Host capture-app.com
   ProxyCommand ssh bk.cptr.no nc -N ie.webserver.capture-app.com 22
 
-Host sg.capture-app.com
-  ProxyCommand ssh bk.cptr.no nc -N sg.webserver.capture-app.com 22
+Host github.com
+    Hostname github.com
+    IdentityFile ~/.ssh/id_rsa.pub
+    
 
-Host bast1.sg
-  HostName b1.sg.tef.re
-  Compression no
-  #CompressionLevel 9  
-  #ProxyCommand ssh brygge nc -N b1.sg.tef.re 22
-  #ProxyCommand ssh b1.sg.tef.re nc -N %h 22
 
-#Host b1.sg.tef.re
-#  Compression no
-#  #CompressionLevel 9
-#  HostName b1.sg.tef.re
-
-#Host sapp*
-#  ProxyCommand ssh bast1.sg nc %h 22
-
-#Host sutil1
-#  ProxyCommand ssh bast1.sg nc %h 22
-#  ProxyCommand mosh -- hop  -W bast1.sg:22
-  
-#Host sutil2
-#  ProxyCommand ssh bast1.sg nc %h 22
-  #ProxyCommand mosh -- hop  -W bast1.sg:22
 

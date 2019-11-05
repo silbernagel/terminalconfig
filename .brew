@@ -10,7 +10,6 @@ brew install htop
 brew install ncdu
 brew install watch
 brew tap caskroom/fonts
-brew cask install evernote
 brew cask install google-chrome
 brew cask install iterm2
 brew cask install slack
@@ -33,4 +32,6 @@ brew cask install karabiner-elements
 brew cask install 1password-beta
 brew tap domt4/autoupdate
 brew autoupdate --start 43200
-
+brew cask install atext
+brew install yqrashawn/goku/goku
+brew services start goku
