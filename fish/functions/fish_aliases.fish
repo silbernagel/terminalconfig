@@ -11,7 +11,7 @@ alias n="nano"
 alias e="emacs"
 alias sudo="sudo -p '[sudo] %h:%u'"
 alias ps="ps aux"
-alias s="subl"
+alias s="emacs"
 
 # DB-connections
 alias db1a.sg="pgcli -U trinitysys -h10.2.2.1 capture_user_sg_1"

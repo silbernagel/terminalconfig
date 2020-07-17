@@ -1,4 +1,4 @@
-setenv EDITOR "s"
+setenv EDITOR "emacs"
 export GREP_OPTIONS="--color=auto"
 
 if test -d "/usr/local/opt/coreutils/libexec/gnubin"
