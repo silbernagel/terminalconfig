@@ -36,3 +36,4 @@ brew autoupdate --start 43200
 brew cask install atext
 brew install yqrashawn/goku/goku
 brew services start goku
+brew install discord
