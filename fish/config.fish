@@ -24,5 +24,4 @@ export CLICOLOR=1
 
 test -e {$HOME}/.iterm2_shell_integration.fish ; and source {$HOME}/.iterm2_shell_integration.fish
 
-
-
+set PATH "/opt/homebrew/bin/" $PATH

@@ -10,17 +10,14 @@ Host *
   AddKeysToAgent yes
   #RemoteForward 52698 localhost:52698
 
-Host neoplex.org
+Host river.neoplex.org
     #RemoteForward 52698 127.0.0.1:52698
     PubkeyAcceptedKeyTypes +ssh-dss
-    HostName neoplex.org
-    IdentityFile ~/.ssh/id_dsa
+    HostName river.neoplex.org
+    IdentityFile ~/.ssh/id_rsa_capture_cluster
 
 Host bk.cptr.no
   HostName bk.cptr.no
-
-Host reporting.cptr.no
-  HostName reporting.cptr.no
 
 Host bast1.no
   ProxyCommand ssh bk.cptr.no nc -N 62.92.26.132 2233
@@ -49,9 +46,6 @@ Host db4a
 
 Host db7a
   ProxyCommand ssh bast1.no nc %h 22
-
-Host capture-app.com
-  ProxyCommand ssh bk.cptr.no nc -N ie.webserver.capture-app.com 22
 
 Host github.com
     Hostname github.com
